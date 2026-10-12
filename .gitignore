@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 任务产物（page_check.py / 截图脚本会生成）
+.shots/
+_src/
+rendered.txt
+BUG检查报告.md
+
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini
