@@ -13,6 +13,7 @@
 | [project-update](project-update/) | 项目收尾流程：文档更新、自检、敏感内容扫描、提交与推送 |
 | [page-shot](page-shot/) | 多标签页 / 分页 / 超长滚动网页的逐页整页截图 |
 | [lit-source-search](lit-source-search/) | 为文档条目检索英文学术文献依据，每轮输出 5 篇候选后暂停 |
+| [autonomous-mode](autonomous-mode/) | 长任务的授权式工作模式：方案照走、细节自决，只有四类硬停，收尾交一份「决策＋结果」文档 |
 
 各目录包含：
 
@@ -63,6 +64,10 @@ cp -r 简洁输出 ~/.claude/skills/
 
 配套两个可直接复用的 Python 脚本，位于 `webpage-retemplate/templates/`。
 
+### 关于「autonomous-mode」的能力边界
+
+该 skill 降低的是**询问成本**，不降低**验证成本**。它要求把"派独立复核子代理"和"即时落档"当作默认动作，这两项开销高于不加载时的做法——省下来的是人被打断的次数，不是总工作量。适用边界与失效模式均写在规范内（含一张"我会怎么判断错"的对照表）。
+
 ## 目录结构
 
 ```
@@ -83,7 +88,10 @@ bolo-skill-kit/
 ├── page-shot/
 │   ├── SKILL.md
 │   └── README.md
-└── lit-source-search/
+├── lit-source-search/
+│   ├── SKILL.md
+│   └── README.md
+└── autonomous-mode/
     ├── SKILL.md
     └── README.md
 ```

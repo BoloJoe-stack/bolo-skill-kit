@@ -14,3 +14,7 @@ BUG检查报告.md
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# 发布工作区：含内部工具路径、内部 skill 名与发布链路记录，属私密材料，不入公开库
+autonomous-mode/飞书发布/
+autonomous-mode/脱敏对照表.md
