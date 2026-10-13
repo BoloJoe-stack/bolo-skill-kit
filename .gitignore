@@ -16,5 +16,7 @@ Thumbs.db
 desktop.ini
 
 # 发布工作区：含内部工具路径、内部 skill 名与发布链路记录，属私密材料，不入公开库
+# 尤其「脱敏对照表.md」——它逐字列出被删掉的内部路径与内部 skill 名，本身比原文件更需隔离
 autonomous-mode/飞书发布/
 autonomous-mode/脱敏对照表.md
+autonomous-mode/发布记录-仓库.md
