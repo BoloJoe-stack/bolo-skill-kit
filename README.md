@@ -6,14 +6,14 @@
 
 ## 目录
 
-| Skill | 功能 |
-|---|---|
-| [严谨专业](严谨专业/) | 全局文体模式：回答、文档、网页文案、图表文字、代码注释统一为严谨书面语 |
-| [webpage-retemplate](webpage-retemplate/) | 依据既有网页版式生成新页面，附内容保真核对管线 |
-| [project-update](project-update/) | 项目收尾流程：文档更新、自检、敏感内容扫描、提交与推送 |
-| [page-shot](page-shot/) | 多标签页 / 分页 / 超长滚动网页的逐页整页截图 |
-| [lit-source-search](lit-source-search/) | 为文档条目检索英文学术文献依据，每轮输出 5 篇候选后暂停 |
-| [autonomous-mode](autonomous-mode/) | 长任务的授权式工作模式：方案照走、细节自决，只有四类硬停，收尾交一份「决策＋结果」文档 |
+| Skill | 目录 | 功能 |
+|---|---|---|
+| 严谨专业 | [formal-style](formal-style/) | 全局文体模式：回答、文档、网页文案、图表文字、代码注释统一为严谨书面语 |
+| 网页套版 | [webpage-retemplate](webpage-retemplate/) | 依据既有网页版式生成新页面，附内容保真核对管线 |
+| 项目收尾 | [project-update](project-update/) | 项目收尾流程：文档更新、自检、敏感内容扫描、提交与推送 |
+| 网页截图 | [page-shot](page-shot/) | 多标签页 / 分页 / 超长滚动网页的逐页整页截图 |
+| 文献溯源 | [lit-source-search](lit-source-search/) | 为文档条目检索英文学术文献依据，每轮输出 5 篇候选后暂停 |
+| 全自动模式 | [autonomous-mode](autonomous-mode/) | 长任务的授权式工作模式：方案照走、细节自决，只有四类硬停，收尾交一份「决策＋结果」文档 |
 
 各目录包含：
 
@@ -27,10 +27,10 @@
 
 ```bash
 # 项目级（仅对当前项目生效）
-cp -r webpage-retemplate <项目目录>/.claude/skills/
+cp -r formal-style <项目目录>/.claude/skills/
 
 # 用户级（对所有项目生效）
-cp -r webpage-retemplate ~/.claude/skills/
+cp -r formal-style ~/.claude/skills/
 ```
 
 重启会话后生效。触发方式见各 skill 的 `description` 字段。
@@ -68,7 +68,7 @@ cp -r webpage-retemplate ~/.claude/skills/
 ```
 bolo-skill-kit/
 ├── README.md
-├── 严谨专业/
+├── formal-style/
 │   ├── SKILL.md
 │   └── README.md
 ├── webpage-retemplate/
