@@ -8,6 +8,7 @@
 
 | Skill | 功能 |
 |---|---|
+| [严谨专业](严谨专业/) | 全局文体模式：回答、文档、网页文案、图表文字、代码注释统一为严谨书面语 |
 | [webpage-retemplate](webpage-retemplate/) | 依据既有网页版式生成新页面，附内容保真核对管线 |
 | [project-update](project-update/) | 项目收尾流程：文档更新、自检、敏感内容扫描、提交与推送 |
 | [page-shot](page-shot/) | 多标签页 / 分页 / 超长滚动网页的逐页整页截图 |
@@ -36,6 +37,12 @@ cp -r webpage-retemplate ~/.claude/skills/
 
 ## 说明
 
+### 关于「严谨专业」与篇幅的关系
+
+该 skill 只管文体，不管篇幅。篇幅由用户的当面要求控制，例如「简短些」「只给结论」。
+
+两者冲突时保留口径：为求短而删掉口径的句子是错的。规则内另列四条破戒条款，用于紧急告警、用户要求引用原话、技术原文与极短文案四种情形。
+
 ### 关于「project-update」的敏感内容扫描
 
 该 skill 记录了一项已验证的失效情形：**用于记录"已扫描哪些敏感模式"的说明文字，其本身会被扫描规则命中**。
@@ -61,6 +68,9 @@ cp -r webpage-retemplate ~/.claude/skills/
 ```
 bolo-skill-kit/
 ├── README.md
+├── 严谨专业/
+│   ├── SKILL.md
+│   └── README.md
 ├── webpage-retemplate/
 │   ├── SKILL.md
 │   ├── README.md
