@@ -8,7 +8,6 @@
 
 | Skill | 功能 |
 |---|---|
-| [简洁输出](简洁输出/) | 压缩 AI 回复篇幅，结论先行，技术事实不丢失。附 A/B 实测结论与适用边界 |
 | [webpage-retemplate](webpage-retemplate/) | 依据既有网页版式生成新页面，附内容保真核对管线 |
 | [project-update](project-update/) | 项目收尾流程：文档更新、自检、敏感内容扫描、提交与推送 |
 | [page-shot](page-shot/) | 多标签页 / 分页 / 超长滚动网页的逐页整页截图 |
@@ -27,26 +26,15 @@
 
 ```bash
 # 项目级（仅对当前项目生效）
-cp -r 简洁输出 <项目目录>/.claude/skills/
+cp -r webpage-retemplate <项目目录>/.claude/skills/
 
 # 用户级（对所有项目生效）
-cp -r 简洁输出 ~/.claude/skills/
+cp -r webpage-retemplate ~/.claude/skills/
 ```
 
 重启会话后生效。触发方式见各 skill 的 `description` 字段。
 
 ## 说明
-
-### 关于「简洁输出」的适用边界
-
-该 skill 曾进行 A/B 对照测试：同一任务分别在不加载与加载规范的条件下执行，比较输出长度，并由独立代理核查信息遗漏情况。结果如下：
-
-| 任务类型 | 输出篇幅 | 信息完整性 |
-|---|---|---|
-| 撰写文档、解释问题 | 减少约 50% | 基本无损失 |
-| 代码审查、问题排查 | 减少 34%–45% | 存在关键发现遗漏，不建议单独使用 |
-
-带明确适用边界的规范，比仅陈述收益的规范更具实用价值。这也是将其单独列出的原因。
 
 ### 关于「project-update」的敏感内容扫描
 
@@ -73,9 +61,6 @@ cp -r 简洁输出 ~/.claude/skills/
 ```
 bolo-skill-kit/
 ├── README.md
-├── 简洁输出/
-│   ├── SKILL.md
-│   └── README.md
 ├── webpage-retemplate/
 │   ├── SKILL.md
 │   ├── README.md
